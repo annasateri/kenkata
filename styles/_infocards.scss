@@ -1,0 +1,39 @@
+.info-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+    .container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+.info-cards {
+    .card {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        background-color: $themeOpacity;
+        border: none;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            background-color: $primary;
+            color: $textLight;
+            h5 {
+                color: $textLight;
+            }
+            img {
+                filter: brightness(800%);
+            }
+        }
+        h5 {
+            color: $primary;
+            transition: all 0.3s ease-in-out;
+        }
+        img {
+            padding: 16px;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+}

@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    font-size: 16px;
+    line-height: 1,5;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// title, zigzag line
+
+h1 {
+    font-family: 'play';
+}
+
+.second-h1 {
+    color: $primary;
+    font-weight: 700;
+}
+
+.title-general {
+    padding: 2.5rem 0;
+    overflow: hidden;
+    h1 {
+        font-weight: 700;
+    }
+}
+
+.title-line {
+    height: 0.7rem;
+    margin-bottom: 1rem;
+}
+
+// buttons
+.btn-light {
+    background-color: #fff;
+    color: $primary;
+    padding: 0.4rem 1rem;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: 0.25s ease-in-out;
+    &:hover {
+        background-color: $primary;
+        color: #fff;
+        border: 1px solid $primary;
+    }
+}
+
+.btn-dark {
+    background-color: $primary;
+    color: $textLight;
+    padding: 0.4rem 1rem;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: 0.25s ease-in-out;
+    &:hover {
+        background-color: $secondary;
+        color: $primary;
+    }
+}
+
+.in-stock {
+    color: $instock;
+}
+
+.out-of-stock {
+    color: $outstock;
+}

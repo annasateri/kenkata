@@ -1,0 +1,29 @@
+.showcase {
+background-image: url('../images/bg.jpg');
+background-repeat: no-repeat;
+background-position: left;
+height: 600px;
+    .container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 600px;
+        .showcase-items {
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            h1 {
+                font-size: 60px;
+            }
+        }
+    }
+}
+
+
+@media (min-width: 768px) {
+
+.showcase {
+    background-position: center;
+}
+
+}

@@ -1,0 +1,108 @@
+.account-container {
+    background-color: $themeLight;
+    height: 140px;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        h4 {
+            color: $primary;
+            margin: 0;
+        }
+        li {
+            color: $textLight;
+        }
+        a {
+            color: $primary;
+            text-decoration: none;
+            &:hover {
+                color: $textDark;
+            }
+        }
+        .breadcrumb {
+            margin: 0;
+        }
+    }
+}
+
+.breadcrumb-item+ .breadcrumb-item:before {
+    color: #fff !important;
+}
+
+.account-page {
+    .account-boxes {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        .login {
+            background-color: $lightGray;
+            width: 50%;
+            height: 550px;
+            padding: 2rem;
+            a {
+                color: $primary;
+                &:hover {
+                    color: $secondary;
+                }
+            }
+            hr {
+                border-top: 1px solid $darkGray;
+                width: 200px;
+            }
+            .facebook {
+                background-color: #3B5998;
+                padding: 10px;
+                border-radius: 8px;
+                position: relative;
+                transition: all 0.3s linear;
+                .facebook-icon {
+                  position: absolute;
+                  height: 25px;
+                  left: 10px;
+                  top: 10px;
+                }
+                &:hover {
+                  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.459);
+                  cursor: pointer;
+                }
+              }
+              .google {
+                background-color: #4285F4;
+                padding: 10px;
+                border-radius: 8px;
+                position: relative;
+                transition: all 0.3s linear;
+                .google-icon {
+                  position: absolute;
+                  height: 25px;
+                  left: 10px;
+                  top: 10px;
+                }
+                &:hover {
+                  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.363);
+                  cursor: pointer;
+                }
+              }
+        }
+
+        .register {
+            background-color: $lightGray;
+            width: 50%;
+            height: 750px;
+            padding: 2rem;
+            a {
+                color: $primary;
+                font-weight: 600;
+                &:hover {
+                    color: $secondary;
+                }
+            }
+        }
+        .btn-dark {
+            box-shadow: none;
+            font-size: 18px;
+        }
+    }
+}
